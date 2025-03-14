@@ -53,7 +53,7 @@ const Sidebar = ({ selectedTab, setselectedTab }) => {
             aria-expanded="false"
           >
             <img
-              src="https://github.com/mdo.png"
+              src="https://github.com/moon.png"
               alt=""
               width="32"
               height="32"

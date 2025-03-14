@@ -1,9 +1,15 @@
-import { createContext } from "react";
+import { createContext, useReducer } from "react";
 
-const PostList = createContext({});
+const PostList = createContext({
+  postList: [],
+  addPost: () => { },
+  deletePost: () => { },
+});
 
 const PostListProvider = ({ children }) => {
+  const [postList, dispatchPostList] = useReducer();
   return <PostList.Provider value={[]}>{children}</PostList.Provider>;
 };
 
 export default PostListProvider;
+ 
